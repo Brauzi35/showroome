@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.control.MainViewController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1519.0" prefWidth="1200.0">
+         <children>
+            <Polygon fx:id="eventSelector" fill="PURPLE" layoutX="682.0" layoutY="148.0" points="-35.0, -36.0, 22.0, -36.0, -7.0, -18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polygon fx:id="homeSelector" fill="PURPLE" layoutX="491.0" layoutY="148.0" points="-35.0, -36.0, 22.0, -36.0, -7.0, -18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polygon fx:id="mapSelector" fill="PURPLE" layoutX="589.0" layoutY="148.0" points="-35.0, -36.0, 22.0, -36.0, -7.0, -18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polygon fx:id="contactSelector" fill="PURPLE" layoutX="777.0" layoutY="148.0" points="-35.0, -36.0, 22.0, -36.0, -7.0, -18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polygon fx:id="profileSelector" fill="PURPLE" layoutX="874.0" layoutY="148.0" points="-35.0, -36.0, 22.0, -36.0, -7.0, -18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <AnchorPane layoutX="71.0" layoutY="43.0" prefHeight="71.0" prefWidth="1095.0" style="-fx-background-color: purple; -fx-background-radius: 35; -fx-border-radius: 35;" AnchorPane.bottomAnchor="1405.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="43.0">
+               <children>
+                  <Button fx:id="mapButton" layoutX="479.0" layoutY="4.0" mnemonicParsing="false" onAction="#mapClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@map%20copia.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="eventsButton" layoutX="573.0" layoutY="3.0" mnemonicParsing="false" onAction="#eventsClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@calendar.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="contactButton" layoutX="667.0" layoutY="4.0" mnemonicParsing="false" onAction="#contactClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@communicate.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="47.0" layoutY="7.0" prefHeight="60.0" prefWidth="200.0" text="SHOWROOME" textFill="WHITE">
+                     <font>
+                        <Font name="Avenir Next Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="profileButton" layoutX="763.0" layoutY="4.0" mnemonicParsing="false" onAction="#profileClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="homeButton" layoutX="382.0" layoutY="4.0" mnemonicParsing="false" onAction="#homeClick" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></AnchorPane>
+            <AnchorPane fx:id="homePane" layoutX="72.0" layoutY="179.0" prefHeight="1300.0" prefWidth="1095.0" style="-fx-background-color: #DED9E0; -fx-background-radius: 35; -fx-border-radius: 35; -fx-border-color: purple; -fx-border-width: 2;">
+               <children>
+                  <Label layoutX="69.0" layoutY="37.0" prefHeight="54.0" prefWidth="336.0" text="Artists nearby:">
+                     <font>
+                        <Font name="Arial" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="631.0" prefHeight="54.0" prefWidth="417.0" text="Artists you have liked:">
+                     <font>
+                        <Font name="Arial" size="39.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane fx:id="contactPane" layoutX="74.0" layoutY="180.0" prefHeight="506.0" prefWidth="1095.0" style="-fx-background-color: #DED9E0; -fx-background-radius: 35; -fx-border-radius: 35; -fx-border-color: purple; -fx-border-width: 2;">
+               <children>
+                  <Text fill="PURPLE" layoutX="63.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Showroome is an application system that aims promoting those skilled and talented individuals that choose to express themselves as street artist&quot;" wrappingWidth="992.8362121582031">
+                     <font>
+                        <Font name="System Bold Italic" size="48.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="73.0" layoutY="317.0" prefHeight="66.0" prefWidth="324.0" text="Contacts:">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="399.0" prefHeight="69.0" prefWidth="551.0" text="valerio.brauzi@student.uniroma2.eu">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="76.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@email.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="profilePane" layoutX="74.0" layoutY="180.0" prefHeight="1300.0" prefWidth="1095.0" style="-fx-background-color: #DED9E0; -fx-background-radius: 35; -fx-border-radius: 35; -fx-border-color: purple; -fx-border-width: 2;">
+               <children>
+                  <Button fx:id="loginButton" layoutX="91.0" layoutY="45.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="63.0" prefWidth="324.0" text="Login" />
+               </children></AnchorPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
