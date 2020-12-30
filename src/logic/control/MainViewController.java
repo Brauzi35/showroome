@@ -138,6 +138,15 @@ public class MainViewController {
         stage.setScene(new Scene(root1));  
         stage.show();
     }
+    
+    @FXML
+    void registerClick(ActionEvent event) throws Exception {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/logic/boundary/RegisterView.fxml"));
+        Parent root2 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root2));  
+        stage.show();
+    }
 
     
     

@@ -108,7 +108,13 @@
             </AnchorPane>
             <AnchorPane fx:id="profilePane" layoutX="73.0" layoutY="179.0" prefHeight="506.0" prefWidth="1095.0" style="-fx-background-color: #DED9E0; -fx-background-radius: 35; -fx-border-radius: 35; -fx-border-color: purple; -fx-border-width: 2;">
                <children>
-                  <Button fx:id="loginButton" layoutX="91.0" layoutY="45.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="63.0" prefWidth="324.0" text="Login" />
+                  <Button fx:id="loginButton" layoutX="55.0" layoutY="27.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="63.0" prefWidth="324.0" style="-fx-background-radius: 35; -fx-border-radius: 35; -fx-border-color: purple;" text="Login" />
+                  <Button fx:id="registerButton" layoutX="444.0" layoutY="27.0" mnemonicParsing="false" onAction="#registerClick" prefHeight="63.0" prefWidth="324.0" style="-fx-background-radius: 35; -fx-border-radius: 35; -fx-border-color: purple;" text="Register" />
+                  <Label layoutX="400.0" layoutY="42.0" text="or">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
                </children></AnchorPane>
          </children></AnchorPane>
   </content>
